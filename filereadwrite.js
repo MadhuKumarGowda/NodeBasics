@@ -1,4 +1,7 @@
-// this program is to demonstrate the read and write file operation synchronously
+/* 
+this program is to demonstrate the read and write file operation synchronously
+Created on 31 Jan 2024 By: Madhu Kumar K S
+*/
 
 const fs = require('fs');
 
