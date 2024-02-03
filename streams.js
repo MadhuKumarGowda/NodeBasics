@@ -44,8 +44,13 @@ server.on('request',(req,res)=>{
     rs.on('data',(chunk)=>{
     // we can't use res.end() as its end the writing operation as soon as it receive first set of Chunk data
       res.write(chunk);
-      res.end("written operation completed"); // this will be help to end the response once all the data read from streams
     });
+
+    // Emitting end event when there read operation completed
+    // or there is nothing to read
+    rs.on('end',()=>{
+        res.end("written operation completed"); // this will be help to end the response once all the data read from streams
+    })
 
     // emitting error if there is any error 
     rs.on('error',(error)=>{
