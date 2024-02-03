@@ -50,6 +50,5 @@ server.on('request',(req,res)=>{
     // emitting error if there is any error 
     rs.on('error',(error)=>{
         res.end(`error occur while reading the file ${error.message}`);
-    })
-   
+    })   
 })
