@@ -20,7 +20,7 @@ console.log("Program has started...");
 // stored in 1st Phase
 setTimeout(() => {
     console.log("executing inside timeout")
-}, 0);
+}, 1);
 
 // Stored in 3rd Phase
 setImmediate(()=>{
@@ -36,7 +36,7 @@ setImmediate(()=>{
     }, 0);
 
     setImmediate(()=>{
-        console.log("set immediate callback executing in 2nd Phase"); // this line wiull execute after file read operation
+        console.log("set immediate callback executing in 2nd Phase"); // this line will execute after file read operation
     })
 
     // important callbacks which will extecute after file reading method

@@ -14,5 +14,5 @@ server.listen(8000, '127.0.0.1',(req,res)=>{
 
 // on is event emitter
 server.on('request',(req,res)=>{
-     res.end("Hello from Server Event Driven : Yukti");
+     res.end("Hello from Server Event Driven : Yukthi");
 });

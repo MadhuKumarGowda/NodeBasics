@@ -5,7 +5,7 @@ Created on 31 Jan 2024 By: Madhu Kumar K S
 
 
 console.log("Hello From NodeJS");
-console.log("This is first node for public giy hub");
+console.log("This is first node for public git hub");
 
 // Creating an interface to read user input
 const readline = require("readline");

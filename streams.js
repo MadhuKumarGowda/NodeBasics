@@ -44,6 +44,7 @@ server.on('request',(req,res)=>{
     rs.on('data',(chunk)=>{
     // we can't use res.end() as its end the writing operation as soon as it receive first set of Chunk data
       res.write(chunk);
+      console.log(`written data ${chunk}`)
     });
 
     // Emitting end event when there read operation completed
